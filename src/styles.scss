@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.primary-link {
+  color: pink;
+}
+
+.large-font {
+  font-size: 4rem !important;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.title {
+  @extend .large-font;
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+}
