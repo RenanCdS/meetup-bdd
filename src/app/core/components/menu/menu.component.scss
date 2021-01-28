@@ -1,0 +1,8 @@
+:host {
+  .menu-list {
+    list-style-type: none;
+    > .menuitem {
+      display: inline;
+    }
+  }
+}

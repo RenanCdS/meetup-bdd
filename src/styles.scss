@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import './variables';
 * {
   box-sizing: border-box;
 }
@@ -36,6 +36,21 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .w-100 {
   width: 100%;
+}
+
+.mat-icon {
+  width: 60px !important;
+  height: 60px !important;
+  color: $pink;
+}
+
+.logo {
+  color: $defaultWhite;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  &.-nomargin {
+    margin-bottom: 0;
+  }
 }
 
 .title {

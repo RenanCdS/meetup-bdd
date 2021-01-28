@@ -5,11 +5,6 @@
     padding: 4rem 0;
     background: $greyBackground;
     height: 100vh;
-    .logo {
-      color: $defaultWhite;
-      font-size: 3rem;
-      margin-bottom: 3rem;
-    }
 
     .form {
       width: 50%;
@@ -20,11 +15,5 @@
   .mat-form-field {
     width: 100%;
     margin-bottom: 2rem;
-  }
-
-  .mat-icon {
-    width: 60px;
-    height: 60px;
-    color: $pink;
   }
 }
