@@ -14,6 +14,10 @@ const routes: Routes = [
       {
         path: 'home',
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+      },
+      {
+        path: 'registrar-medicamento',
+        loadChildren: () => import('./medicine-register/medicine-register.module').then(m => m.MedicineRegisterModule)
       }
     ]
   },

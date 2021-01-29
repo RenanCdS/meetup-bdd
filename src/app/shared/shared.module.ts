@@ -5,23 +5,33 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { CardComponent } from './components/card/card.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
+const components = [
+  CardComponent
+];
 
 const modules = [
   MatIconModule,
   MatFormFieldModule,
   MatToolbarModule,
   MatInputModule,
-  MatButtonModule
+  MatButtonModule,
+  MatDatepickerModule,
+  MatNativeDateModule
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [...components],
   imports: [
     CommonModule,
     ...modules
   ],
   exports: [
-    ...modules
+    ...modules,
+    ...components
   ]
 })
 export class SharedModule { }

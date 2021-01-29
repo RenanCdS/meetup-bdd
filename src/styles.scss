@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;
 }
-html, body { height: 100%; }
+html, body { height: 100%; background: rgba(200,200,200, .2) }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .d-flex {
@@ -26,22 +26,35 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   margin-right: 1rem;
 }
 
+.mt-2 {
+  margin-top: 2rem;
+}
+
 .primary-link {
   color: pink;
 }
 
 .large-font {
-  font-size: 4rem !important;
+  font-size: 3.5rem !important;
 }
 
 .w-100 {
   width: 100%;
 }
 
+.w-75 {
+  width: 75%;
+}
+
 .mat-icon {
   width: 60px !important;
   height: 60px !important;
   color: $pink;
+
+  &.-black {
+    color: $defaultBlack;
+    font-size: 3.5rem;
+  }
 }
 
 .logo {
@@ -57,4 +70,21 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   @extend .large-font;
   margin-bottom: 0 !important;
   padding-bottom: 0;
+
+  &.-small {
+    font-size: 2rem !important;
+  }
+
+  &.-black {
+    color: $defaultBlack;
+  }
+}
+
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  width: 20%;
 }

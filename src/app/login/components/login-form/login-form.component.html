@@ -3,16 +3,22 @@
     <mat-icon class="mr-1 large-font">medical_services</mat-icon>
     <h1 class="title">Axé</h1>
   </div>
-  <form class="form">
+  <form [formGroup]="loginForm" class="form">
     <div>
       <mat-form-field>
         <mat-label>Email</mat-label>
-        <input matInput type="text">
+        <input formControlName="email" matInput type="text">
+        <mat-error *ngIf="loginForm.controls.email.errors?.email">
+          E-mail inválido
+        </mat-error>
       </mat-form-field>
     </div>
     <mat-form-field>
       <mat-label>Senha</mat-label>
-      <input matInput type="password">
+      <input formControlName="password" matInput type="password">
+      <mat-error *ngIf="loginForm.controls.password.errors?.minlength">
+        A senha precisa ter no mínimo 7 caracteres
+      </mat-error>
     </mat-form-field>
     <button type="button" class="w-100" mat-raised-button [routerLink]="['home']">Entrar</button>
   </form>
