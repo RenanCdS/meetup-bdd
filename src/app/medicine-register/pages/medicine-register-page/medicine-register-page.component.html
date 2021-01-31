@@ -7,7 +7,7 @@
   </mat-toolbar>
   <div class="w-75 margin-auto mt-2 pb-2">
     <card>
-      <form (ngSubmit)="registerMedicine()" [formGroup]="registerMedicineForm">
+      <form [formGroup]="registerMedicineForm">
         <div>
           <div>
             <mat-form-field color="primary">
@@ -57,7 +57,7 @@
             </mat-form-field>
           </div>
         </div>
-        <button mat-raised-button class="btn mt-2">
+        <button type="button" (click)="registerMedicine()" mat-raised-button class="btn mt-2">
           Cadastrar
         </button>
       </form>
