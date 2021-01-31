@@ -5,44 +5,59 @@
       <h1 class="title -small -black">Registro de medicamento</h1>
     </div>
   </mat-toolbar>
-  <div class="w-75 margin-auto mt-2">
+  <div class="w-75 margin-auto mt-2 pb-2">
     <card>
-      <form>
+      <form (ngSubmit)="registerMedicine()" [formGroup]="registerMedicineForm">
         <div>
           <div>
             <mat-form-field color="primary">
               <mat-label>Nome do medicamento</mat-label>
-              <input matInput type="text">
+              <input formControlName="name" matInput type="text">
+              <mat-error *ngIf="controlsErrorMessages.name">
+                {{controlsErrorMessages.name}}
+              </mat-error>
             </mat-form-field>
           </div>
           <div>
             <mat-form-field>
               <mat-label>Descrição</mat-label>
-              <input matInput type="text">
+              <input formControlName="description" matInput type="text">
+              <mat-error *ngIf="controlsErrorMessages.description">
+                {{controlsErrorMessages.description}}
+              </mat-error>
             </mat-form-field>
           </div>
           <div>
             <mat-form-field>
               <mat-label>Categoria</mat-label>
-              <input matInput type="text">
+              <input formControlName="category" matInput type="text">
+              <mat-error *ngIf="controlsErrorMessages.category">
+                {{controlsErrorMessages.category}}
+              </mat-error>
             </mat-form-field>
           </div>
           <div>
             <mat-form-field>
               <mat-label>Código de rastreamento</mat-label>
-              <input matInput type="text">
+              <input formControlName="trackCode" matInput type="text">
+              <mat-error *ngIf="controlsErrorMessages.trackCode">
+                {{controlsErrorMessages.trackCode}}
+              </mat-error>
             </mat-form-field>
           </div>
           <div>
             <mat-form-field>
               <mat-label>Escolha uma data</mat-label>
-              <input matInput [matDatepicker]="picker">
+              <input formControlName="date" matInput [matDatepicker]="picker">
               <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
               <mat-datepicker #picker></mat-datepicker>
+              <mat-error *ngIf="controlsErrorMessages.date">
+                {{controlsErrorMessages.date}}
+              </mat-error>
             </mat-form-field>
           </div>
         </div>
-        <button mat-raised-button type="text" class="btn">
+        <button mat-raised-button class="btn mt-2">
           Cadastrar
         </button>
       </form>

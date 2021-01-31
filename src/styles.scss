@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;
 }
-html, body { height: 100%; background: rgba(200,200,200, .2) }
+html, body { background: rgba(200,200,200, .2) }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .d-flex {
@@ -27,7 +27,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .mt-2 {
-  margin-top: 2rem;
+  margin-top: 2rem !important;
+}
+
+.pb-2 {
+  padding-bottom: 2rem !important;
 }
 
 .primary-link {
