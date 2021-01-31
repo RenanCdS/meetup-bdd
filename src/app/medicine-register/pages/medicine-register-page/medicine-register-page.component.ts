@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Subscription } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 import { validationMessages } from './validation-messages';
@@ -29,11 +30,15 @@ export class MedicineRegisterPageComponent implements OnInit, OnDestroy {
     date: ''
   };
 
-  constructor(private readonly fb: FormBuilder) { }
+  constructor(private readonly fb: FormBuilder, private snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
     this.registerMedicineForm = this.fb.group(this.registerMedicineFormControls);
     this.watchControls();
+  }
+
+  private initializeForm(): void {
+    this.registerMedicineForm = this.fb.group(this.registerMedicineFormControls);
   }
 
   /**
@@ -46,7 +51,6 @@ export class MedicineRegisterPageComponent implements OnInit, OnDestroy {
       this.registerMedicineFormSubscriptions.push(this.registerMedicineFormControls[controlName].valueChanges.pipe(
         debounceTime(300)
       ).subscribe(() => {
-        console.log(this.controlsErrorMessages);
         this.setMessage(this.registerMedicineFormControls[controlName], controlName);
       }));
     })
@@ -68,13 +72,16 @@ export class MedicineRegisterPageComponent implements OnInit, OnDestroy {
       this.validateControls();
       return;
     }
-    console.log(this.registerMedicineForm);
+    this.snackBar.open('medicamento cadastrado com sucesso!', '', {
+      duration: 3000
+    });
+    this.registerMedicineForm.reset();
+    this.registerMedicineForm.updateValueAndValidity();
   }
 
   private validateControls(): void {
     const controlsArray = Object.keys(this.registerMedicineFormControls);
     controlsArray.forEach(controlName => {
-      console.log(this.controlsErrorMessages);
       this.setMessage(this.registerMedicineFormControls[controlName], controlName);
     });
     this.registerMedicineForm.updateValueAndValidity();
