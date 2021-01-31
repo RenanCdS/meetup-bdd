@@ -37,6 +37,10 @@ export class MedicineRegisterPageComponent implements OnInit, OnDestroy {
     this.watchControls();
   }
 
+  private initializeForm(): void {
+    this.registerMedicineForm = this.fb.group(this.registerMedicineFormControls);
+  }
+
   /**
    * @description método usado para "assistir" os valores dos controls e validá-los a cada nova interação
    */
