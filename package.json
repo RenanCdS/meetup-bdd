@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "open:cypress": "cypress open"
   },
   "private": true,
   "dependencies": {
@@ -29,11 +30,13 @@
     "@angular-devkit/build-angular": "~0.1001.6",
     "@angular/cli": "~10.1.6",
     "@angular/compiler-cli": "~10.1.5",
+    "@cypress/browserify-preprocessor": "^3.0.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "cypress": "^6.4.0",
+    "cypress-cucumber-preprocessor": "^4.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~5.0.0",
@@ -45,5 +48,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.0.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/support/step_definitions"
   }
 }
