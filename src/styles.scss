@@ -35,7 +35,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .primary-link {
-  color: pink;
+  color: $pink;
 }
 
 .large-font {
@@ -50,6 +50,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   width: 75%;
 }
 
+.black {
+  background: $defaultBlack;
+  color: $defaultWhite
+}
 .mat-icon {
   width: 60px !important;
   height: 60px !important;

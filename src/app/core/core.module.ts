@@ -4,7 +4,7 @@ import { BaseLayoutComponent } from './components/base-layout/base-layout.compon
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { MenuComponent } from './components/menu/menu.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -12,6 +12,7 @@ import { MenuComponent } from './components/menu/menu.component';
   imports: [
     CommonModule,
     RouterModule,
+    HttpClientModule,
     SharedModule
   ]
 })

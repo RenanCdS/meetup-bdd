@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "open:cypress": "cypress open"
+    "open:cypress": "cypress open",
+    "wiremock": "wiremock --port 8888 --root-dir wiremock --global-response-templating --enable-stub-cors"
   },
   "private": true,
   "dependencies": {
@@ -47,7 +48,8 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.0.2"
+    "typescript": "~4.0.2",
+    "wiremock": "^2.27.2"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,

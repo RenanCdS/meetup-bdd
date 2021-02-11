@@ -1,0 +1,11 @@
+{
+  "priority": "9999",
+  "request": {
+      "method": "POST",
+      "url": "/api/v1/login"
+  },
+  "response": {
+      "status": 200,
+      "bodyFileName": "api/v1/login/login-resp__default.json"
+  }
+}

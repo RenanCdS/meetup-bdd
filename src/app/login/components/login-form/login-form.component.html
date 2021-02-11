@@ -19,9 +19,6 @@
     <mat-form-field>
       <mat-label>Senha</mat-label>
       <input formControlName="password" matInput type="password">
-      <mat-error *ngIf="loginForm.controls.password.errors?.minlength">
-        A senha precisa ter no mínimo 7 caracteres
-      </mat-error>
       <mat-error *ngIf="loginForm.controls.password.errors?.required">
         Campo obrigatório
       </mat-error>

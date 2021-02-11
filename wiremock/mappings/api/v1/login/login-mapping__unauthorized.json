@@ -1,0 +1,15 @@
+{
+  "priority": "9998",
+  "request": {
+      "method": "POST",
+      "url": "/api/v1/login",
+      "bodyPatterns" : [ {
+        "equalToJson" : "{ \"email\": \"allan@gmail.com\", \"password\": \"TesteErro\"  }",
+        "ignoreArrayOrder" : true,
+        "ignoreExtraElements" : true
+      } ]
+  },
+  "response": {
+      "status": 403
+  }
+}
