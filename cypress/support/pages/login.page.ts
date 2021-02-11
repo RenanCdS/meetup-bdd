@@ -1,8 +1,13 @@
-import { getUser } from "../utils/users-store"
-
 export const LoginPage = {
-  login(user) {
-    const currentUser = getUser(user);
-    cy.login(currentUser.email, currentUser.senha);
+  login(email: string, senha: string) {
+    cy.login(email, senha);
+  },
+  getErroDoCampoDeEmail() {
+    return cy.get('.mat-error').first();
+  },
+  clicarBotaoDeLogin() {
+    cy.get('.mat-raised-button')
+      .contains('Entrar')
+      .click({ force: true });
   }
 }
