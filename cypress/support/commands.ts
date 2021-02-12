@@ -44,8 +44,4 @@ Cypress.Commands.add('login', (email, password) => {
     .clear()
     .blur();
   }
-
-  cy.get('button')
-    .contains('Entrar')
-    .click();
 });

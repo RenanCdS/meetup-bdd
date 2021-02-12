@@ -1,4 +1,4 @@
-import { Given as Dado, When as Quando, Then as Então } from "cypress-cucumber-preprocessor/steps";
+import { Given as Dado, When as Quando, Then as Então, And as E } from "cypress-cucumber-preprocessor/steps";
 import { LoginPage } from "../pages/login.page";
 import { SnackBarPage } from '../pages/snackbar.page';
 
@@ -14,15 +14,11 @@ Quando('Insiro as credenciais de login {string} e {string}', (email: string, sen
   LoginPage.login(email, senha);
 });
 
-Quando('Insiro as credenciais de login do {string} corretamente', (user: string) => {
-  // LoginPage.login(user);
+Quando('tento logar sem preencher as informações de login', () => {
+  LoginPage.clicarBotaoDeLogin();
 });
 
-Quando('devo ver um feedback com um erro referente a {string}', () => {
-
-});
-
-Quando('clico no botão de login sem preencher as informações de login', () => {
+E('logo na aplicação', () => {
   LoginPage.clicarBotaoDeLogin();
 });
 
