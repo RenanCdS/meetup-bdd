@@ -1,0 +1,42 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "BDD",
+  "steps": [
+    {
+      "file": "cypress/integration/features/login.feature",
+      "description": "Insira uma descrição da funcionalidade a ser automatizada.",
+      "line": 2
+    },
+    {
+      "file": "cypress/integration/features/login.feature",
+      "description": "Coloque uma descrição para o cenário.",
+      "line": 6
+    },
+    {
+      "file": "cypress/integration/features/login.feature",
+      "description": "Insira exemplos na tabela.",
+      "line": 27
+    },
+    {
+      "file": "cypress/support/step_definitions/login.steps.ts",
+      "description": "Os steps são automatizados a partir desse arquivo.",
+      "line": 9
+    },
+    {
+      "file": "cypress/support/pages/login.page.ts",
+      "description": "Implementação da interação com o HTML ocorre em um arquivo a parte ",
+      "line": 8,
+      "selection": {
+        "start": {
+          "line": 8,
+          "character": 3
+        },
+        "end": {
+          "line": 8,
+          "character": 21
+        }
+      }
+    }
+  ],
+  "ref": "master"
+}
