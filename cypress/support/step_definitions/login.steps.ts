@@ -2,12 +2,9 @@ import { Given as Dado, When as Quando, Then as Então, And as E } from "cypress
 import { LoginPage } from "../pages/login.page";
 import { SnackBarPage } from '../pages/snackbar.page';
 
-Dado('que estou registrado no portal', () => {
-
-});
-
 Dado('que não estou autenticado no portal', () => {
   cy.visit('/login');
+  cy.clearLocalStorage();
 });
 
 Quando('Insiro as credenciais de login {string} e {string}', (email: string, senha: string) => {
@@ -40,6 +37,6 @@ Então(/devo ver um feedback com um erro referente a "([^"]*)" no formulário/, 
 });
 
 Então('devo receber feedbacks nos campos não preenchidos', () => {
-
+  LoginPage.getErroDoCampoDeEmail().should('contain', 'Campo obrigatório');
 });
 
