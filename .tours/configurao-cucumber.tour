@@ -1,0 +1,67 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Configuração Cucumber",
+  "steps": [
+    {
+      "file": "package.json",
+      "description": "Necessários essas três dependências de dev.",
+      "line": 39,
+      "selection": {
+        "start": {
+          "line": 37,
+          "character": 1
+        },
+        "end": {
+          "line": 39,
+          "character": 47
+        }
+      }
+    },
+    {
+      "file": "cypress/plugins/index.js",
+      "description": "Adicionar o plugin do cucumber nas configurações do Cypress.",
+      "line": 30,
+      "selection": {
+        "start": {
+          "line": 18,
+          "character": 1
+        },
+        "end": {
+          "line": 30,
+          "character": 2
+        }
+      }
+    },
+    {
+      "file": ".vscode/settings.json",
+      "description": "Configuração da extensão do Cucumber que auxilia na criação dos cenários.\r\n[Extensão Cucumber](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete)",
+      "line": 5,
+      "selection": {
+        "start": {
+          "line": 2,
+          "character": 1
+        },
+        "end": {
+          "line": 5,
+          "character": 55
+        }
+      }
+    },
+    {
+      "file": "cypress/tsconfig.json",
+      "description": "É necessário adicionar um tsconfig caso for usar typescript.",
+      "line": 15,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 16,
+          "character": 1
+        }
+      }
+    }
+  ],
+  "ref": "master"
+}
