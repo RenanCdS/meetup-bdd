@@ -1,0 +1,162 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Adição de cenários",
+  "steps": [
+    {
+      "file": "cypress.json",
+      "description": "No arquivo de configuração do cypress é necessário especificar onde os arquivos **.feature** ficarão.",
+      "line": 9
+    },
+    {
+      "file": "cypress/integration/features/login.feature",
+      "description": "É necessário adicionar o idioma usado nos cenários.",
+      "line": 2,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 14
+        }
+      }
+    },
+    {
+      "file": "cypress/integration/features/login.feature",
+      "description": "A palavra chave **Funcionalidade** é usada para identificar e descrever a feature.",
+      "line": 4,
+      "selection": {
+        "start": {
+          "line": 2,
+          "character": 1
+        },
+        "end": {
+          "line": 4,
+          "character": 41
+        }
+      }
+    },
+    {
+      "file": "cypress/integration/features/login.feature",
+      "description": "A palavra **Cenário** é usada para descrever e especificar o cenário que será automatizado.",
+      "line": 7
+    },
+    {
+      "file": "cypress/integration/features/login.feature",
+      "description": "Cada linha do cenário é chamada de **step**. A palavra **Dado** prepara alguma pré-condição necessária para execução da automação.",
+      "line": 8,
+      "selection": {
+        "start": {
+          "line": 8,
+          "character": 12
+        },
+        "end": {
+          "line": 8,
+          "character": 18
+        }
+      }
+    },
+    {
+      "file": "cypress/support/step_definitions/login.steps.ts",
+      "description": "Cada **step** tem um código correspondente que implementa o comportamento esperado via código.",
+      "line": 8,
+      "selection": {
+        "start": {
+          "line": 5,
+          "character": 1
+        },
+        "end": {
+          "line": 8,
+          "character": 4
+        }
+      }
+    },
+    {
+      "file": "cypress/integration/features/login.feature",
+      "description": "A palavra chave **Quando** executa uma ação.",
+      "line": 9
+    },
+    {
+      "file": "cypress/support/step_definitions/login.steps.ts",
+      "description": "Implementação do step que insere as credenciais do usuário. Note que nesse caso são passados valores como variáveis.",
+      "line": 12,
+      "selection": {
+        "start": {
+          "line": 10,
+          "character": 1
+        },
+        "end": {
+          "line": 12,
+          "character": 4
+        }
+      }
+    },
+    {
+      "file": "cypress/support/step_definitions/login.steps.ts",
+      "description": "Todas as interações com o HTML da página são realizadas em uma camada à parte com um design pattern chamado **Page Object**",
+      "line": 11
+    },
+    {
+      "file": "cypress/support/pages/login.page.ts",
+      "description": "Para cada página da aplicação vai existir uma **Page Object** que será responsável por interagir com o HTML da aplicação. Isso ajuda na abstração desses detalhes de implementação nos arquivos de steps.",
+      "line": 13,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 14,
+          "character": 1
+        }
+      }
+    },
+    {
+      "file": "cypress/support/pages/login.page.ts",
+      "description": "Através do método **.get** disponibilizado na api do Cypress é possível capturar elementos da página HTML e interagir com eles.",
+      "line": 9,
+      "selection": {
+        "start": {
+          "line": 6,
+          "character": 12
+        },
+        "end": {
+          "line": 6,
+          "character": 32
+        }
+      }
+    },
+    {
+      "file": "cypress/support/pages/login.page.ts",
+      "description": "Existem diversos métodos de interação como **.click**, **.type** etc ",
+      "line": 11
+    },
+    {
+      "file": "cypress/integration/features/login.feature",
+      "description": "A palavra chave **E** é um complemento da ação anterior.",
+      "line": 10
+    },
+    {
+      "file": "cypress/integration/features/login.feature",
+      "description": "A palavra chave **Então** é usada para validar um efeito da ação realizada anteriormente sobre a plicação.",
+      "line": 11
+    },
+    {
+      "file": "cypress/support/step_definitions/login.steps.ts",
+      "description": "O método **should** auxilia no **assert** de comportamentos esperados após uma ação.",
+      "line": 24,
+      "selection": {
+        "start": {
+          "line": 22,
+          "character": 1
+        },
+        "end": {
+          "line": 24,
+          "character": 4
+        }
+      }
+    }
+  ],
+  "ref": "master"
+}

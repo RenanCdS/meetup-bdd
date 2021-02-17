@@ -1,4 +1,10 @@
 {
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": true,
+    "html": true,
+    "json": true
+  },
   "baseUrl": "http://localhost:4200",
   "testFiles": "**/*.feature"
 }

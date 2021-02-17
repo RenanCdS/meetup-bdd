@@ -1,0 +1,37 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Adição de reporter mochawesome",
+  "steps": [
+    {
+      "file": "package.json",
+      "description": "Adição dessa três dependências de DEV.",
+      "line": 53,
+      "selection": {
+        "start": {
+          "line": 51,
+          "character": 4
+        },
+        "end": {
+          "line": 53,
+          "character": 46
+        }
+      }
+    },
+    {
+      "file": "cypress.json",
+      "description": "Adição das configurações de report do Cypress.",
+      "line": 7,
+      "selection": {
+        "start": {
+          "line": 2,
+          "character": 1
+        },
+        "end": {
+          "line": 7,
+          "character": 5
+        }
+      }
+    }
+  ],
+  "ref": "master"
+}

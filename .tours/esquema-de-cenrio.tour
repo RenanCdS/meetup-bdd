@@ -1,0 +1,57 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Esquema de Cenário",
+  "steps": [
+    {
+      "file": "cypress/integration/features/login.feature",
+      "description": "É possível testar um mesmo cenário com diversas entradas diferentes. Para isso, usa-se a palavra chave **Esquema do Cenário**.",
+      "line": 27
+    },
+    {
+      "file": "cypress/integration/features/login.feature",
+      "description": "Logo abaixo insere-se a palavra chave **Exemplos** com as entradas que serão usadas nas implementações dos steps.",
+      "line": 31,
+      "selection": {
+        "start": {
+          "line": 27,
+          "character": 3
+        },
+        "end": {
+          "line": 30,
+          "character": 74
+        }
+      }
+    },
+    {
+      "file": "cypress/integration/features/login.feature",
+      "description": "As entradas colocadas no bloco **Exemplos** serão substituidas nas palavras marcadas com **<>**",
+      "line": 29,
+      "selection": {
+        "start": {
+          "line": 25,
+          "character": 2
+        },
+        "end": {
+          "line": 26,
+          "character": 84
+        }
+      }
+    },
+    {
+      "file": "cypress/support/step_definitions/login.steps.ts",
+      "description": "A entrada \"tipoErro\" do bloco **Exemplos** será substituída na variável usada na implementação do step.",
+      "line": 37,
+      "selection": {
+        "start": {
+          "line": 30,
+          "character": 1
+        },
+        "end": {
+          "line": 37,
+          "character": 4
+        }
+      }
+    }
+  ],
+  "ref": "master"
+}
