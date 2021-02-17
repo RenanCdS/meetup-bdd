@@ -5,7 +5,7 @@
     {
       "file": "cypress.json",
       "description": "No arquivo de configuração do cypress é necessário especificar onde os arquivos **.feature** ficarão.",
-      "line": 3
+      "line": 9
     },
     {
       "file": "cypress/integration/features/login.feature",
@@ -40,12 +40,12 @@
     {
       "file": "cypress/integration/features/login.feature",
       "description": "A palavra **Cenário** é usada para descrever e especificar o cenário que será automatizado.",
-      "line": 6
+      "line": 7
     },
     {
       "file": "cypress/integration/features/login.feature",
       "description": "Cada linha do cenário é chamada de **step**. A palavra **Dado** prepara alguma pré-condição necessária para execução da automação.",
-      "line": 7,
+      "line": 8,
       "selection": {
         "start": {
           "line": 8,
@@ -75,7 +75,7 @@
     {
       "file": "cypress/integration/features/login.feature",
       "description": "A palavra chave **Quando** executa uma ação.",
-      "line": 8
+      "line": 9
     },
     {
       "file": "cypress/support/step_definitions/login.steps.ts",
@@ -135,12 +135,12 @@
     {
       "file": "cypress/integration/features/login.feature",
       "description": "A palavra chave **E** é um complemento da ação anterior.",
-      "line": 9
+      "line": 10
     },
     {
       "file": "cypress/integration/features/login.feature",
       "description": "A palavra chave **Então** é usada para validar um efeito da ação realizada anteriormente sobre a plicação.",
-      "line": 10
+      "line": 11
     },
     {
       "file": "cypress/support/step_definitions/login.steps.ts",

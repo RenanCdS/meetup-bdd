@@ -3,6 +3,7 @@
 # compiled output
 /cypress/screenshots
 /cypress/videos
+/mochawesome-report
 /dist
 /tmp
 /out-tsc

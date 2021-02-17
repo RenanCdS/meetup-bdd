@@ -5,7 +5,7 @@
     {
       "file": "package.json",
       "description": "Necessários essas três dependências de dev.",
-      "line": 39,
+      "line": 42,
       "selection": {
         "start": {
           "line": 37,

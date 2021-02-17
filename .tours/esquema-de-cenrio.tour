@@ -5,12 +5,12 @@
     {
       "file": "cypress/integration/features/login.feature",
       "description": "É possível testar um mesmo cenário com diversas entradas diferentes. Para isso, usa-se a palavra chave **Esquema do Cenário**.",
-      "line": 23
+      "line": 27
     },
     {
       "file": "cypress/integration/features/login.feature",
       "description": "Logo abaixo insere-se a palavra chave **Exemplos** com as entradas que serão usadas nas implementações dos steps.",
-      "line": 30,
+      "line": 31,
       "selection": {
         "start": {
           "line": 27,
@@ -25,7 +25,7 @@
     {
       "file": "cypress/integration/features/login.feature",
       "description": "As entradas colocadas no bloco **Exemplos** serão substituidas nas palavras marcadas com **<>**",
-      "line": 26,
+      "line": 29,
       "selection": {
         "start": {
           "line": 25,

@@ -11,7 +11,8 @@
     "open:cypress": "cypress open",
     "run:cypress": "cypress run",
     "wiremock": "wiremock --port 8888 --root-dir wiremock --global-response-templating --enable-stub-cors",
-    "run:cypress:tags": "cypress-tags run -e"
+    "run:cypress:success": "cypress-tags run -e TAGS=\"@cenario-sucesso\"",
+    "run:cypress:tags": "cypress-tags run"
   },
   "private": true,
   "dependencies": {
@@ -47,6 +48,9 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
