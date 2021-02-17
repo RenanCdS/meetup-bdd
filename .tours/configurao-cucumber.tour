@@ -18,6 +18,21 @@
       }
     },
     {
+      "file": "package.json",
+      "description": "É necessário indicar onde os steps (implementações das frases presentes no arquivo .feature) ficarão. ",
+      "line": 63,
+      "selection": {
+        "start": {
+          "line": 60,
+          "character": 2
+        },
+        "end": {
+          "line": 63,
+          "character": 4
+        }
+      }
+    },
+    {
       "file": "cypress/plugins/index.js",
       "description": "Adicionar o plugin do cucumber nas configurações do Cypress.",
       "line": 30,
