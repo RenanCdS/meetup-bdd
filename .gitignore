@@ -2,6 +2,7 @@
 
 # compiled output
 /cypress/screenshots
+/cypress/videos
 /dist
 /tmp
 /out-tsc

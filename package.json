@@ -9,7 +9,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "open:cypress": "cypress open",
-    "wiremock": "wiremock --port 8888 --root-dir wiremock --global-response-templating --enable-stub-cors"
+    "run:cypress": "cypress run",
+    "wiremock": "wiremock --port 8888 --root-dir wiremock --global-response-templating --enable-stub-cors",
+    "run:cypress:tags": "cypress-tags run -e"
   },
   "private": true,
   "dependencies": {
