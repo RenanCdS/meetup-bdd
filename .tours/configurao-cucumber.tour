@@ -4,15 +4,20 @@
   "steps": [
     {
       "file": "package.json",
-      "description": "Necessários essas três dependências de dev.",
-      "line": 42,
+      "description": "Dependência do pré-processador.",
+      "line": 38
+    },
+    {
+      "file": "package.json",
+      "description": "Dependências do Cypress e Cucumber.",
+      "line": 45,
       "selection": {
         "start": {
-          "line": 37,
-          "character": 1
+          "line": 44,
+          "character": 2
         },
         "end": {
-          "line": 39,
+          "line": 45,
           "character": 47
         }
       }
@@ -20,7 +25,7 @@
     {
       "file": "package.json",
       "description": "É necessário indicar onde os steps (implementações das frases presentes no arquivo .feature) ficarão. ",
-      "line": 63,
+      "line": 65,
       "selection": {
         "start": {
           "line": 60,

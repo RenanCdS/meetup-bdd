@@ -20,7 +20,7 @@ E('logo na aplicação', () => {
 });
 
 Então('devo ser redirecionado para a Home', () => {
-  cy.url().should('contain', 'home');
+  cy.url({ timeout: 20000 }).should('contain', 'home');
 });
 
 Então('devo ver um feedback informando que as credencias estão incorretas', () => {
