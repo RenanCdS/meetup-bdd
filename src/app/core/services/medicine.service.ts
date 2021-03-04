@@ -25,4 +25,8 @@ export class MedicineService {
       })
     );
   }
+
+  deleteMedicine(medicineId: number): Observable<any> {
+    return this.http.delete(`${environment.api.baseUrlV1}/medicines/${medicineId}`);
+  }
 }

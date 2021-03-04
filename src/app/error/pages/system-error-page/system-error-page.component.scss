@@ -1,0 +1,10 @@
+.error-container {
+  width: 100%;
+  padding: 2rem;
+
+  > .info {
+    margin: 1rem auto;
+    width: 50%;
+    text-align: center;
+  }
+}

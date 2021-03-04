@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;
 }
-html, body { background: rgba(200,200,200, .2); height: 100%; }
+html, body {  min-height: 100%;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .d-flex {
@@ -95,5 +95,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .btn {
   width: 20%;
+}
+
+.medium-image {
+  width: 50%;
+  height: 25rem;
+
+  &.-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 

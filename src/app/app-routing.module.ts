@@ -14,8 +14,12 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     children: [
       {
-        path: 'home',
-        loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+        path: 'listagem-medicamentos',
+        loadChildren: () => import('./medicines/medicines.module').then(m => m.HomeModule)
+      },
+      {
+        path: 'error',
+        loadChildren: () => import('./error/error.module').then(m => m.ErrorModule)
       },
       {
         path: 'registrar-medicamento',

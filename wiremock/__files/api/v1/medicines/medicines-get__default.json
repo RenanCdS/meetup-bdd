@@ -1,6 +1,7 @@
 {
   "results": [
     {
+      "medicineId": 1,
       "medicineName": "dipirona",
       "medicineDescription": "Hydrogen",
       "medicineCategory": 1.0079,
@@ -8,6 +9,7 @@
       "dueDate": "{{now format='dd-MM-YYYY'}}"
     },
     {
+      "medicineId": 2,
       "medicineName": "rocutam",
       "medicineDescription": "Helium",
       "medicineCategory": 4.0026,
@@ -15,6 +17,7 @@
       "dueDate": "{{now format='dd-MM-YYYY'}}"
     },
     {
+      "medicineId": 3,
       "medicineName": "aminoxicidil",
       "medicineDescription": "Lithium",
       "medicineCategory": 6.941,
@@ -22,6 +25,7 @@
       "dueDate": "{{now format='dd-MM-YYYY'}}"
     },
     {
+      "medicineId": 4,
       "medicineName": "doril",
       "medicineDescription": "Beryllium",
       "medicineCategory": 9.0122,
@@ -29,6 +33,7 @@
       "dueDate": "{{now format='dd-MM-YYYY'}}"
     },
     {
+      "medicineId": 5,
       "medicineName": "gelol",
       "medicineDescription": "Boron",
       "medicineCategory": 10.811,
@@ -36,6 +41,7 @@
       "dueDate": "{{now format='dd-MM-YYYY'}}"
     },
     {
+      "medicineId": 6,
       "medicineName": "active",
       "medicineDescription": "Carbon",
       "medicineCategory": 12.0107,
@@ -43,6 +49,7 @@
       "dueDate": "{{now format='dd-MM-YYYY'}}"
     },
     {
+      "medicineId": 7,
       "medicineName": "calcitran",
       "medicineDescription": "Nitrogen",
       "medicineCategory": 14.0067,
@@ -50,6 +57,7 @@
       "dueDate": "{{now format='dd-MM-YYYY'}}"
     },
     {
+      "medicineId": 8,
       "medicineName": "pastilha",
       "medicineDescription": "Oxygen",
       "medicineCategory": 15.9994,
