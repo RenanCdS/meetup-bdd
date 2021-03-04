@@ -1,0 +1,15 @@
+{
+  "priority": "9998",
+  "request": {
+      "method": "GET",
+      "urlPathPattern": "/api/v1/medicines",
+      "queryParameters": {
+        "pageNumber": {
+          "matches": "2"
+        }
+      }
+  },
+  "response": {
+      "status": 500
+  }
+}

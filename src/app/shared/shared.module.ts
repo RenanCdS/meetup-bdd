@@ -9,6 +9,8 @@ import { CardComponent } from './components/card/card.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTableModule } from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 const components = [
   CardComponent
@@ -22,7 +24,9 @@ const modules = [
   MatButtonModule,
   MatDatepickerModule,
   MatNativeDateModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatPaginatorModule,
+  MatTableModule
 ];
 
 @NgModule({

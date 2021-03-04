@@ -1,0 +1,11 @@
+{
+  "priority": "9999",
+  "request": {
+      "method": "GET",
+      "urlPathPattern": "/api/v1/medicines"
+  },
+  "response": {
+      "status": 200,
+      "bodyFileName": "api/v1/medicines/medicines-get__default.json"
+  }
+}

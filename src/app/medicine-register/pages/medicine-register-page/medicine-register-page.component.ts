@@ -30,7 +30,7 @@ export class MedicineRegisterPageComponent implements OnInit, OnDestroy {
     date: ''
   };
 
-  constructor(private readonly fb: FormBuilder, private snackBar: MatSnackBar) { }
+  constructor(private readonly fb: FormBuilder, private readonly snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
     this.registerMedicineForm = this.fb.group(this.registerMedicineFormControls);
