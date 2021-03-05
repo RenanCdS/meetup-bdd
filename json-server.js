@@ -1,19 +1,26 @@
-const jsonServer = require('json-server')
-const server = jsonServer.create()
-const router = jsonServer.router('db.json')
-const middlewares = jsonServer.defaults()
+const jsonServer = require('json-server');
+const server = jsonServer.create();
+const router = jsonServer.router('db.json');
+const middlewares = jsonServer.defaults();
 
 
-router.render = (req, res) => {
-  console.log(res.locals);
-  res.jsonp(
-    res.locals.data.results
- )
+server.use(jsonServer.rewriter({
+  "/api/v1/*": "/$1"
+}));
+
+server.use(jsonServer.bodyParser);
+router.render = (req, res, next) => {
+  if (req.method === 'GET') {
+    res.jsonp({
+      results: res.locals.data
+    });
+  }
+  res.jsonp(res.locals.data);
 };
 
-server.use(middlewares)
+server.use(middlewares);
 
-server.use(router)
+server.use(router);
 server.listen(3000, () => {
   console.log('JSON Server is running')
 })
