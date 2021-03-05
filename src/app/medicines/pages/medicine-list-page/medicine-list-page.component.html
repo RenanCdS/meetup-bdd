@@ -41,7 +41,7 @@
               <mat-icon>cancel</mat-icon>
             </a>
             <a class="icon updatemedicine" [routerLink]="['/medicamentos/' + element.medicineId]">
-              <mat-icon>home</mat-icon>
+              <mat-icon>mode_edit</mat-icon>
             </a>
           </div>
         </td>
@@ -52,7 +52,7 @@
     </table>
     <div class="paginator-wrapper">
       <mat-paginator [length]="10"
-                   [pageSize]="5"
+                   [pageSize]="dataSource.length"
                    (page)="handlePageChange($event)">
       </mat-paginator>
     </div>
