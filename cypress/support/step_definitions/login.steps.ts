@@ -10,6 +10,7 @@ Dado('que não estou autenticado no portal', () => {
 Dado('estou logado', () => {
   cy.visit('/login');
   LoginPage.login('teste@gmail.com', 'Teste123');
+  LoginPage.clicarBotaoDeLogin();
 });
 
 Quando('Insiro as credenciais de login {string} e {string}', (email: string, senha: string) => {

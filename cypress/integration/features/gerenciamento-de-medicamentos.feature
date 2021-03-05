@@ -8,6 +8,7 @@ Funcionalidade: Gerenciamento de medicamentos
     Quando acesso a página de listagem de medicamentos
     Então devo ver uma tabela com os medicamentos cadastrados
 
+   @focus
   Cenário: Tentar visualizar os medicamentos sem êxito
     Dado que possuo medicamentos cadastrados na aplicação
     E estou logado

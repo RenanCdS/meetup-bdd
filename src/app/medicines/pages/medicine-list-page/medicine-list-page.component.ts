@@ -50,20 +50,15 @@ export class MedicineListPageComponent implements OnInit {
   }
 
   private getMedicines(pageNumber: number): void {
-    if (this.medicineStore.medicineListSubject.getValue() && this.medicineStore.medicineListSubject.getValue().length !== 0) {
-      this.dataSource = this.medicineStore.medicineListSubject.getValue();
-      console.log(this.dataSource);
-    } else {
-      this.medicineService.getMedicines(pageNumber).subscribe({
-        next: (medicineList) => {
-          this.dataSource = medicineList;
-          this.updateMedicineListStore();
-        },
-        error: () => {
-          this.router.navigate(['/error']);
-        }
-      })
-    }
+    this.medicineService.getMedicines(pageNumber).subscribe({
+      next: (medicineList) => {
+        this.dataSource = medicineList;
+        this.updateMedicineListStore();
+      },
+      error: () => {
+        this.router.navigate(['/error']);
+      }
+    })
   }
 
   private updateMedicineListStore(): void {
