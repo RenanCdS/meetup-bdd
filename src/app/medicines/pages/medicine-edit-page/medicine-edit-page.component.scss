@@ -1,0 +1,7 @@
+@import 'src/_variables';
+
+:host {
+  .mat-toolbar {
+    background: $pink;
+  }
+}

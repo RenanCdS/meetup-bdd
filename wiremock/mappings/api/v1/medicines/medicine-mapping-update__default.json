@@ -1,0 +1,10 @@
+{
+  "priority": "9999",
+  "request": {
+      "method": "PUT",
+      "urlPathPattern": "/api/v1/medicines/([0-9]*)"
+  },
+  "response": {
+      "status": 204
+  }
+}

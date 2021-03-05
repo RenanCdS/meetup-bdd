@@ -29,4 +29,8 @@ export class MedicineService {
   deleteMedicine(medicineId: number): Observable<any> {
     return this.http.delete(`${environment.api.baseUrlV1}/medicines/${medicineId}`);
   }
+
+  updateMedicine(medicine: Medicine): Observable<any> {
+    return this.http.put(`${environment.api.baseUrlV1}/medicines/${medicine.medicineId}`, medicine);
+  }
 }

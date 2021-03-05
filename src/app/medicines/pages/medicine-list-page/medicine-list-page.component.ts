@@ -4,6 +4,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { Medicine } from 'src/app/core/models/medicine';
 import { MedicineService } from 'src/app/core/services/medicine.service';
+import { MedicineStore } from 'src/app/core/stores/medicine.store';
 
 @Component({
   templateUrl: './medicine-list-page.component.html',
@@ -13,7 +14,8 @@ export class MedicineListPageComponent implements OnInit {
 
   constructor(private readonly medicineService: MedicineService,
               private readonly router: Router,
-              private readonly snackBar: MatSnackBar) { }
+              private readonly snackBar: MatSnackBar,
+              private readonly medicineStore: MedicineStore) { }
 
   ngOnInit(): void {
     this.getMedicines(1);
@@ -44,16 +46,27 @@ export class MedicineListPageComponent implements OnInit {
 
   private removeMedicineFromList(medicineId: number): void {
     this.dataSource = this.dataSource.filter(medicine => medicine.medicineId !== medicineId);
+    this.updateMedicineListStore();
   }
 
   private getMedicines(pageNumber: number): void {
-    this.medicineService.getMedicines(pageNumber).subscribe({
-      next: (medicineList) => {
-        this.dataSource = medicineList;
-      },
-      error: () => {
-        this.router.navigate(['/error']);
-      }
-    })
+    if (this.medicineStore.medicineListSubject.getValue() && this.medicineStore.medicineListSubject.getValue().length !== 0) {
+      this.dataSource = this.medicineStore.medicineListSubject.getValue();
+      console.log(this.dataSource);
+    } else {
+      this.medicineService.getMedicines(pageNumber).subscribe({
+        next: (medicineList) => {
+          this.dataSource = medicineList;
+          this.updateMedicineListStore();
+        },
+        error: () => {
+          this.router.navigate(['/error']);
+        }
+      })
+    }
+  }
+
+  private updateMedicineListStore(): void {
+    this.medicineStore.medicineListSubject.next(this.dataSource);
   }
 }

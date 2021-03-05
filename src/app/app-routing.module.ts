@@ -14,7 +14,7 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     children: [
       {
-        path: 'listagem-medicamentos',
+        path: 'medicamentos',
         loadChildren: () => import('./medicines/medicines.module').then(m => m.HomeModule)
       },
       {

@@ -5,24 +5,31 @@
     background: $pink;
   }
 
-  .medicine-table {
-    width: 80%;
-    margin: 2rem auto;
+  .table-group {
+    margin-bottom: 2rem;
+    .medicine-table {
+      width: 80%;
+      margin: 2rem auto 0 auto;
+    }
+
+    .paginator-wrapper {
+      width: 80%;
+      margin: auto;
+    }
   }
 
   .icon-column {
-    > .deletemedicine .mat-icon {
+    > .icon .mat-icon {
       cursor: pointer;
       width: 1.5rem !important;
       height: 1.5rem !important;
     }
+
   }
 
   .mat-paginator {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    margin-top: 2rem;
+    clear: both;
+    position: relative;
   }
 
 }
