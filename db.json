@@ -1,6 +1,5 @@
 {
-  "medicines": {
-    "results": [
+  "medicines": [
       {
         "medicineId": 1,
         "medicineName": "dipirona",
@@ -66,5 +65,4 @@
         "dueDate": "{{now format='dd-MM-YYYY'}}"
       }
     ]
-  }
 }
