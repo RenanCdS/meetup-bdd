@@ -40,6 +40,7 @@ export class MedicineListPageComponent implements OnInit {
         this.snackBar.open('ocorreu um erro ao deletar o medicamento', '', {
           duration: 2000
         });
+        this.router.navigate(['/erro']);
       }
     })
   }
@@ -56,7 +57,7 @@ export class MedicineListPageComponent implements OnInit {
         this.updateMedicineListStore();
       },
       error: () => {
-        this.router.navigate(['/error']);
+        this.router.navigate(['/erro']);
       }
     })
   }

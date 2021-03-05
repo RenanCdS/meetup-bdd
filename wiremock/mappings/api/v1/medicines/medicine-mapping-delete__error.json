@@ -1,0 +1,10 @@
+{
+  "priority": "9998",
+  "request": {
+      "method": "DELETE",
+      "urlPathPattern": "/api/v1/medicines/3"
+  },
+  "response": {
+      "status": 500
+  }
+}

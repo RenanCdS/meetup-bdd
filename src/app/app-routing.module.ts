@@ -18,7 +18,7 @@ const routes: Routes = [
         loadChildren: () => import('./medicines/medicines.module').then(m => m.HomeModule)
       },
       {
-        path: 'error',
+        path: 'erro',
         loadChildren: () => import('./error/error.module').then(m => m.ErrorModule)
       },
       {

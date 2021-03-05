@@ -1,7 +1,6 @@
 import { Then as Então, And as E } from "cypress-cucumber-preprocessor/steps";
 
 E('seleciono a opção de editar algum dos medicamentos', () => {
-
 });
 
 E('altero as informações do medicamento com sucesso', () => {
