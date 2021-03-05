@@ -7,6 +7,11 @@ Dado('que não estou autenticado no portal', () => {
   cy.clearLocalStorage();
 });
 
+Dado('estou logado', () => {
+  cy.visit('/login');
+  LoginPage.login('teste@gmail.com', 'Teste123');
+});
+
 Quando('Insiro as credenciais de login {string} e {string}', (email: string, senha: string) => {
   LoginPage.login(email, senha);
 });
