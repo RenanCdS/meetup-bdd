@@ -4,7 +4,7 @@ Funcionalidade: Fazer Login
   caso o mesmo tenha credenciais válidas
 
   @cenario-sucesso
-  Cenário: Realizar login com sucesso
+  Cenário: Realizar login com sucess
     Dado que não estou autenticado no portal
     Quando Insiro as credenciais de login "allan@gmail.com" e "Teste123"
     E logo na aplicação
